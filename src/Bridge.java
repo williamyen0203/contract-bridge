@@ -129,7 +129,7 @@ public class Bridge extends Application{
 		playerHand.setMaxHeight(200);
 		playerHand.setAlignment(Pos.CENTER);
 		for (int i = 0; i < 13; i++){
-			String cardInHand = "file:src/playing_cards_images/Playing_card_" + players[0].getCardSuit(i) + "_" + players[0].getCardRank(i) + ".jpg";
+			String cardInHand = "file:src/playing_cards_images/Playing_card_" + players[0].getCardSuit(i) + "_" + players[0].getCardRank(i) + ".png";
 			Button btn = new Button();
 			btn.setId("" + i);
 			btn.setStyle("-fx-background-color: transparent");
@@ -181,7 +181,7 @@ public class Bridge extends Application{
 						}
 						rank = players[1].getRank(index);
 						suit = players[1].getSuit(index);
-						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[1].getCardSuit(index) + "_" + players[1].getCardRank(index) + ".jpg";
+						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[1].getCardSuit(index) + "_" + players[1].getCardRank(index) + ".png";
 						leftHBox.getChildren().add(new ImageView(new Image(cardInHand, 100, 125, true, false)));
 						table.placeCard(players[1], index);
 						playerTurn++;
@@ -196,7 +196,7 @@ public class Bridge extends Application{
 						}
 						rank = players[2].getRank(index);
 						suit = players[2].getSuit(index);
-						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[2].getCardSuit(index) + "_" + players[2].getCardRank(index) + ".jpg";
+						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[2].getCardSuit(index) + "_" + players[2].getCardRank(index) + ".png";
 						topHBox.getChildren().add(new ImageView(new Image(cardInHand, 100, 125, true, false)));
 						table.placeCard(players[2], index);
 						playerTurn++;
@@ -211,7 +211,7 @@ public class Bridge extends Application{
 						}
 						rank = players[3].getRank(index);
 						suit = players[3].getSuit(index);
-						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[3].getCardSuit(index) + "_" + players[3].getCardRank(index) + ".jpg";
+						cardInHand = "file:src/playing_cards_images/Playing_card_" + players[3].getCardSuit(index) + "_" + players[3].getCardRank(index) + ".png";
 						rightHBox.getChildren().add(new ImageView(new Image(cardInHand, 100, 125, true, false)));
 						table.placeCard(players[3], index);
 						playerTurn++;

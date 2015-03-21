@@ -20,7 +20,7 @@ public class Deck{
 			p1.addCard(deck.get(index1));
 			deck.remove(index1);
 			index2 = (int) (Math.random() * deck.size());
-			p2. addCard(deck.get(index2));
+			p2.addCard(deck.get(index2));
 			deck.remove(index2);
 			index3 = (int) (Math.random() * deck.size());
 			p3.addCard(deck.get(index3));
@@ -29,20 +29,5 @@ public class Deck{
 			p4.addCard(deck.get(index4));
 			deck.remove(index4);
 		}
-	}
-	
-	public String toString(){
-		String s = "";
-		if (deck.size() == 0){
-			return "Deck is empty";
-		}
-		for(int i = 0; i < deck.size(); i++){
-			s += "[";
-			s += deck.get(i).getRank();
-			s += ", ";
-			s += deck.get(i).getSuit();
-			s += "]";
-		}
-		return "Deck: " + s + "\nNumber of cards in deck: " + deck.size();
 	}
 }
